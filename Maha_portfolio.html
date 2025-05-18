@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maha Saad | AI Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      padding: 40px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .btn-cv {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn-cv:hover {
+      background-color: #0097a7;
+    }
+
+    .tech-list span {
+      display: inline-block;
+      background-color: #1e1e1e;
+      padding: 8px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    .tabs {
+      display: flex;
+      margin-top: 40px;
+      border-bottom: 1px solid #333;
+    }
+
+    .tab {
+      padding: 12px 20px;
+      cursor: pointer;
+      background-color: #1e1e1e;
+      margin-right: 5px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .tab.active {
+      background-color: #00bcd4;
+      color: #000;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 0 0 5px 5px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .card {
+      background-color: #2a2a2a;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h4 {
+      margin: 0 0 5px;
+      font-size: 16px;
+      color: #00bcd4;
+    }
+
+    .card p {
+      margin: 3px 0;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .card .location {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .card a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .skill-heading {
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: #00bcd4;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      color: #666;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Linkedin.JPG" alt="Maha Saad">
+    <h1>Hi, I'm Maha Saad</h1>
+    <p class="tagline">AI Developer</p>
+    <a class="btn-cv" href="Maha_Saad_CV.pdf" download>Download My CV</a>
+  </header>
+
+  <div class="tabs">
+    <div class="tab" onclick="showTab('education')">Education</div>
+    <div class="tab" onclick="showTab('experience')">Experience</div>
+    <div class="tab" onclick="showTab('projects')">Projects</div>
+    <div class="tab active" onclick="showTab('skills')">Skills</div>
+  </div>
+
+  <div id="education" class="tab-content">
+    <h3>Education</h3>
+    <div class="card">
+      <h4>Master in Artificial Intelligence</h4>
+      <p>Friedrich-Alexander-Universität Erlangen-Nürnberg</p>
+      <p class="location">2023 – Present, Erlangen, Germany</p>
+    </div>
+    <div class="card">
+      <h4>Bachelor of Computer Science</h4>
+      <p>University of Peshawar</p>
+      <p class="location">2010 – 2014, Peshawar, Pakistan</p>
+    </div>
+  </div>
+
+  <div id="experience" class="tab-content">
+    <h3>Experience</h3>
+    <div class="card">
+      <h4>AI Software Developer</h4>
+      <p>Institute for Factory Automation and Production (FAPS)</p>
+      <p class="location">09/2024 – 03/2025, Erlangen</p>
+      <p>Developed pose estimation algorithms using rotation matrices and Euler angles. Improved accuracy by 25% with Pyvista.</p>
+    </div>
+    <div class="card">
+      <h4>Software Developer</h4>
+      <p>Technical University of Munich (TUM)</p>
+      <p class="location">03/2023 – 08/2024, Munich</p>
+      <p>Created R Shiny app predicting forest growth. Integrated real-time ML models to boost processing by 40%.</p>
+    </div>
+    <div class="card">
+      <h4>Lecturer & Lab Assistant</h4>
+      <p>City University Peshawar</p>
+      <p class="location">11/2021 – 05/2023</p>
+      <p>Taught Software Engineering courses. Enhanced student results through practical, hands-on instruction.</p>
+    </div>
+    <div class="card">
+      <h4>Lecturer</h4>
+      <p>The Brains Institute</p>
+      <p class="location">12/2020 – 10/2021</p>
+      <p>Taught Digital Logic Design, OOP, and Software Engineering using Python and Java.</p>
+    </div>
+  </div>
+
+  <div id="projects" class="tab-content">
+    <h3>Projects</h3>
+    <div class="card">
+      <h4><i class="fas fa-music"></i> Notes Recognition in Asian Sitar</h4>
+      <p>Deep learning for musical note analysis.</p>
+      <p><a href="https://github.com/MahaSaad12/-Notes_Recognition_in_Asian_sitar" target="_blank">View Project</a></p>
+    </div>
+    <div class="card">
+      <h4><i class="fas fa-robot"></i> AI Robotics</h4>
+      <p>Robotics projects using Python AI models.</p>
+      <p><a href="https://github.com/MahaSaad12/AI_Robotics" target="_blank">View Project</a></p>
+    </div>
+    <div class="card">
+      <h4><i class="fas fa-mirror"></i> Smart Mirror</h4>
+      <p>Detects depression using facial recognition and emotion analysis.</p>
+      <p><a href="https://github.com/MahaSaad12/Dep_Mirror_Smart_Mirror" target="_blank">View Project</a></p>
+    </div>
+    <div class="card">
+      <h4><i class="fas fa-tree"></i> Forest TUM App</h4>
+      <p>R Shiny tool for forest growth predictions.</p>
+      <p><a href="https://github.com/MahaSaad12/Forest_TUM_app" target="_blank">View Project</a></p>
+    </div>
+    <div class="card">
+      <h4><i class="fas fa-brain"></i> RAG Workflow</h4>
+      <p>Retrieval-Augmented Generation with LLMs.</p>
+      <p><a href="https://github.com/MahaSaad12/RAG_Workflow" target="_blank">View Project</a></p>
+    </div>
+  </div>
+
+  <div id="skills" class="tab-content active">
+    <h3>Skills</h3>
+
+    <h4 class="skill-heading">Languages</h4>
+    <div class="tech-list">
+      <span>Python</span><span>R</span><span>C++</span><span>Java</span>
+    </div>
+
+    <h4 class="skill-heading">Version Control & CI/CD</h4>
+    <div class="tech-list">
+      <span>Git</span><span>GitHub</span><span>Docker</span>
+    </div>
+
+    <h4 class="skill-heading">Generative AI & LLMs</h4>
+    <div class="tech-list">
+      <span>LLMs</span><span>OpenAI GPT</span><span>RAG</span>
+    </div>
+
+    <h4 class="skill-heading">Machine Learning & Deep Learning</h4>
+    <div class="tech-list">
+      <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span>
+    </div>
+
+    <h4 class="skill-heading">Computer Vision</h4>
+    <div class="tech-list">
+      <span>OpenCV</span><span>Pillow</span><span>scikit-image</span>
+    </div>
+
+    <h4 class="skill-heading">Statistical Analysis & Experimentation</h4>
+    <div class="tech-list">
+      <span>Probability</span><span>Statistics</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Maha Saad. All rights reserved.
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
