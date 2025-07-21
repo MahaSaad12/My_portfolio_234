@@ -44,6 +44,13 @@
       margin: 3px;
       display: inline-block;
     }
+    .project-card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
     .hobby-card {
       border-left: none;
       text-align: center;
@@ -72,8 +79,15 @@
       color: #343a40;
       cursor: pointer;
     }
-    .skill-category h4 {
-      margin: 0.5rem 0 0.2rem;
+    .project-card a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #6f42c1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project-card a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -121,25 +135,39 @@
 
 <section id="projects">
   <h2>Projects & Research</h2>
+
   <div class="project-card">
+    <img src="https://via.placeholder.com/600x200?text=Watermark+Matching+Project" alt="Watermark Project">
     <h3>Watermark Typology Matching in WZIS</h3>
     <p>Matched watermark patterns using image processing and pattern recognition.</p>
+    <a href="https://github.com/MahaSaad12" target="_blank">🔗 View on GitHub</a>
   </div>
+
   <div class="project-card">
+    <img src="https://via.placeholder.com/600x200?text=Smart+Mirror+Project" alt="Smart Mirror">
     <h3>Smart Mirror for Depression Detection</h3>
     <p>AI-based smart mirror using facial analysis and sentiment detection.</p>
+    <a href="https://github.com/MahaSaad12/Dep_Mirror_Smart_Mirror" target="_blank">🔗 View on GitHub</a>
   </div>
+
   <div class="project-card">
+    <img src="https://via.placeholder.com/600x200?text=Notes+Recognition+in+Sitar" alt="Sitar Notes">
     <h3>Notes Recognition in Asian Sitar</h3>
     <p>ML algorithms for detecting and labeling musical notes in sitar audio.</p>
+    <a href="https://github.com/MahaSaad12/-Notes_Recognition_in_Asian_sitar" target="_blank">🔗 View on GitHub</a>
   </div>
+
   <div class="project-card">
+    <img src="https://via.placeholder.com/600x200?text=Restaurant+Reservation+App" alt="Restaurant App">
     <h3>Android Restaurant App</h3>
     <p>Table booking and notification app with user management.</p>
   </div>
+
   <div class="project-card">
+    <img src="https://via.placeholder.com/600x200?text=RAG+with+LLMs" alt="RAG Project">
     <h3>Data Retrieval using RAG and LLMs</h3>
     <p>Built a Retrieval-Augmented Generation pipeline using OpenAI.</p>
+    <a href="https://github.com/MahaSaad12/RAG_Workflow" target="_blank">🔗 View on GitHub</a>
   </div>
 </section>
 
@@ -171,8 +199,14 @@
   <p>I'm always interested in new opportunities or collaborations.</p>
   <button onclick="window.location='mailto:mahamaqboolsethi@gmail.com'">📧 Email Me</button>
   <button onclick="window.location='tel:+4917697727247'">📞 Call Me</button>
-  <p>
-    GitHub: <a href="https://github.com/MahaSaad12" style="color:white;">MahaSaad12</a> |
+
+  <div style="margin-top: 1rem;">
+    <a href="https://github.com/MahaSaad12" target="_blank" style="margin: 0 10px; font-size: 1.5rem; color: white; text-decoration: none;">
+      <span style="font-size: 2rem;">🐙</span> GitHub
+    </a>
+  </div>
+
+  <p style="margin-top: 1rem;">
     LinkedIn: <a href="https://linkedin.com/in/mahasaad91" style="color:white;">mahasaad91</a>
   </p>
 </section>
