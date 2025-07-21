@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maha Saad | AI Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maha Saad | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
@@ -11,130 +11,177 @@
       font-family: Arial, sans-serif;
       background-color: #121212;
       color: #fff;
+      padding: 0;
     }
-    header, section {
-      padding: 40px 20px;
+    header {
       text-align: center;
+      padding: 40px 20px 20px;
     }
     header h1 {
       font-size: 36px;
     }
-    .tagline {
-      color: #aaa;
-      font-size: 18px;
+    .tab-menu {
+      display: flex;
+      justify-content: center;
+      background-color: #1e1e1e;
+      padding: 10px;
+    }
+    .tab-menu button {
+      background: none;
+      border: none;
+      color: #ccc;
+      margin: 0 15px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .tab-menu button.active {
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+    }
+    .tab-content {
+      display: none;
+      padding: 30px;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .section h2 {
+      color: #00bcd4;
     }
     .card {
-      background-color: #1e1e1e;
-      border-radius: 10px;
+      background: #2a2a2a;
       padding: 20px;
-      margin: 20px auto;
-      max-width: 700px;
-      text-align: left;
-      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
-    .card h3 {
-      margin: 0 0 10px;
+    .card h4 {
       color: #00bcd4;
     }
-    .card p {
-      margin: 5px 0;
-      color: #ccc;
-    }
-    .card a {
-      color: #00bcd4;
-      text-decoration: none;
-    }
-    .card a:hover {
-      text-decoration: underline;
+    .tech-list span {
+      display: inline-block;
+      background-color: #444;
+      padding: 8px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Maha Saad</h1>
-    <p class="tagline">AI Developer</p>
-  </header>
 
-  <section>
+<header>
+  <h1>Maha Saad</h1>
+  <p>AI Developer | Passionate about Machine Learning & Robotics</p>
+</header>
+
+<div class="tab-menu">
+  <button class="tab-btn active" onclick="showTab('skills')">Skills</button>
+  <button class="tab-btn" onclick="showTab('projects')">Projects</button>
+  <button class="tab-btn" onclick="showTab('education')">Education</button>
+  <button class="tab-btn" onclick="showTab('experience')">Experience</button>
+</div>
+
+<div id="skills" class="tab-content active">
+  <div class="section">
+    <h2>Skills</h2>
+    <h4>Languages</h4>
+    <div class="tech-list">
+      <span>Python</span><span>R</span><span>C++</span><span>Java</span>
+    </div>
+    <h4>Frameworks</h4>
+    <div class="tech-list">
+      <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span>
+    </div>
+    <h4>Computer Vision</h4>
+    <div class="tech-list">
+      <span>OpenCV</span><span>Pillow</span><span>scikit-image</span>
+    </div>
+    <h4>Generative AI</h4>
+    <div class="tech-list">
+      <span>LLMs</span><span>OpenAI GPT</span><span>RAG</span>
+    </div>
+    <h4>Tools</h4>
+    <div class="tech-list">
+      <span>Git</span><span>GitHub</span><span>Docker</span>
+    </div>
+  </div>
+</div>
+
+<div id="projects" class="tab-content">
+  <div class="section">
     <h2>Projects</h2>
-
     <div class="card">
-      <h3>Notes Recognition in Asian Sitar</h3>
-      <p>Used deep learning techniques for musical note detection in Sitar recordings.</p>
-      <p><a href="https://github.com/MahaSaad12/-Notes_Recognition_in_Asian_sitar" target="_blank">View Project</a></p>
+      <h4>Notes Recognition in Asian Sitar</h4>
+      <p><a href="https://github.com/MahaSaad12/-Notes_Recognition_in_Asian_sitar" target="_blank">GitHub</a></p>
     </div>
-
     <div class="card">
-      <h3>AI Chatbot (Transformer)</h3>
-      <p>Built a conversational AI using transformer architecture for interactive dialogs.</p>
-      <p><a href="https://github.com/MahaSaad12/AI_boot" target="_blank">View Project</a></p>
+      <h4>AI Chatbot</h4>
+      <p><a href="https://github.com/MahaSaad12/AI_boot" target="_blank">GitHub</a></p>
     </div>
-
     <div class="card">
-      <h3>AI Robotics</h3>
-      <p>Controlled robotics tasks using Python-driven AI models.</p>
-      <p><a href="https://github.com/MahaSaad12/AI_Robotics" target="_blank">View Project</a></p>
+      <h4>AI Robotics</h4>
+      <p><a href="https://github.com/MahaSaad12/AI_Robotics" target="_blank">GitHub</a></p>
     </div>
-
     <div class="card">
-      <h3>Smart Mirror</h3>
-      <p>Smart mirror with emotion detection for depression analysis via facial recognition.</p>
-      <p><a href="https://github.com/MahaSaad12/Dep_Mirror_Smart_Mirror" target="_blank">View Project</a></p>
+      <h4>Smart Mirror (Depression Detection)</h4>
+      <p><a href="https://github.com/MahaSaad12/Dep_Mirror_Smart_Mirror" target="_blank">GitHub</a></p>
     </div>
-
     <div class="card">
-      <h3>Forest TUM App</h3>
-      <p>R Shiny tool that visualizes and predicts forest growth metrics from forestry data.</p>
-      <p><a href="https://github.com/MahaSaad12/Forest_TUM_app" target="_blank">View Project</a></p>
+      <h4>Forest TUM App</h4>
+      <p><a href="https://github.com/MahaSaad12/Forest_TUM_app" target="_blank">GitHub</a></p>
     </div>
-
     <div class="card">
-      <h3>RAG Workflow</h3>
-      <p>Implemented Retrieval-Augmented Generation pipeline using large language models.</p>
-      <p><a href="https://github.com/MahaSaad12/RAG_Workflow" target="_blank">View Project</a></p>
+      <h4>RAG Workflow</h4>
+      <p><a href="https://github.com/MahaSaad12/RAG_Workflow" target="_blank">GitHub</a></p>
     </div>
-  </section>
+  </div>
+</div>
 
-  <section>
+<div id="education" class="tab-content">
+  <div class="section">
     <h2>Education</h2>
     <div class="card">
-      <h3>Master in Artificial Intelligence</h3>
-      <p>Friedrich-Alexander-Universität Erlangen-Nürnberg</p>
-      <p>2023 – Present, Erlangen, Germany</p>
+      <h4>Master in Artificial Intelligence</h4>
+      <p>Friedrich-Alexander-Universität Erlangen-Nürnberg, 2023 – Present</p>
     </div>
     <div class="card">
-      <h3>Bachelor of Computer Science</h3>
-      <p>University of Peshawar</p>
-      <p>2010 – 2014, Peshawar, Pakistan</p>
+      <h4>Bachelor of Computer Science</h4>
+      <p>University of Peshawar, 2010 – 2014</p>
     </div>
-  </section>
+  </div>
+</div>
 
-  <section>
+<div id="experience" class="tab-content">
+  <div class="section">
     <h2>Experience</h2>
     <div class="card">
-      <h3>AI Software Developer</h3>
-      <p>Institute for Factory Automation and Production (FAPS)</p>
-      <p>09/2024 – 03/2025, Erlangen</p>
-      <p>Developed pose estimation algorithms using rotation matrices and Euler angles. Improved accuracy by 25% with Pyvista.</p>
+      <h4>AI Software Developer</h4>
+      <p>FAPS, Erlangen (09/2024 – 03/2025)</p>
     </div>
     <div class="card">
-      <h3>Software Developer</h3>
-      <p>Technical University of Munich (TUM)</p>
-      <p>03/2023 – 08/2024, Munich</p>
-      <p>Created R Shiny app predicting forest growth. Integrated real-time ML models to boost processing by 40%.</p>
+      <h4>Software Developer</h4>
+      <p>Technical University of Munich (03/2023 – 08/2024)</p>
     </div>
     <div class="card">
-      <h3>Lecturer & Lab Assistant</h3>
-      <p>City University Peshawar</p>
-      <p>11/2021 – 05/2023</p>
-      <p>Taught Software Engineering courses. Enhanced student results through practical, hands-on instruction.</p>
+      <h4>Lecturer & Lab Assistant</h4>
+      <p>City University Peshawar (11/2021 – 05/2023)</p>
     </div>
     <div class="card">
-      <h3>Lecturer</h3>
-      <p>The Brains Institute</p>
-      <p>12/2020 – 10/2021</p>
-      <p>Taught Digital Logic Design, OOP, and Software Engineering using Python and Java.</p>
+      <h4>Lecturer</h4>
+      <p>The Brains Institute (12/2020 – 10/2021)</p>
     </div>
-  </section>
+  </div>
+</div>
+
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
 </body>
 </html>
