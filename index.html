@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maha Saad | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maha Saad | AI Software Developer</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
+      margin: 0;
       padding: 0;
+      background-color: #f8f9fa;
+      color: #212529;
     }
-    header {
+    header, footer {
+      background-color: #343a40;
+      color: white;
       text-align: center;
-      padding: 40px 20px 20px;
+      padding: 1rem;
     }
-    header h1 {
-      font-size: 36px;
+    nav a {
+      color: #ffc107;
+      margin: 0 10px;
+      text-decoration: none;
     }
-    .tab-menu {
-      display: flex;
-      justify-content: center;
-      background-color: #1e1e1e;
-      padding: 10px;
+    section {
+      padding: 2rem;
     }
-    .tab-menu button {
-      background: none;
-      border: none;
-      color: #ccc;
-      margin: 0 15px;
-      padding: 10px 20px;
-      cursor: pointer;
-      font-size: 16px;
+    h2 {
+      color: #6f42c1;
     }
-    .tab-menu button.active {
-      color: #00bcd4;
-      border-bottom: 2px solid #00bcd4;
+    .job, .project-card, .hobby-card {
+      background: white;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 4px solid #6f42c1;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .tab-content {
-      display: none;
-      padding: 30px;
-    }
-    .tab-content.active {
-      display: block;
-    }
-    .section h2 {
-      color: #00bcd4;
-    }
-    .card {
-      background: #2a2a2a;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    .card h4 {
-      color: #00bcd4;
-    }
-    .tech-list span {
+    .tags span, .skill-category p span {
+      background-color: #e9ecef;
+      border-radius: 15px;
+      padding: 4px 10px;
+      margin: 3px;
       display: inline-block;
-      background-color: #444;
-      padding: 8px 12px;
+    }
+    .hobby-card {
+      border-left: none;
+      text-align: center;
+    }
+    .hobby-card button {
+      background: none;
+      border: 1px solid #6f42c1;
+      padding: 5px 15px;
+      color: #6f42c1;
       border-radius: 20px;
-      margin: 5px;
-      font-size: 14px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .contact-section {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .contact-section button {
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      background: white;
+      color: #343a40;
+      cursor: pointer;
+    }
+    .skill-category h4 {
+      margin: 0.5rem 0 0.2rem;
     }
   </style>
 </head>
@@ -72,116 +81,101 @@
 
 <header>
   <h1>Maha Saad</h1>
-  <p>AI Developer | Passionate about Machine Learning & Robotics</p>
+  <p>AI Software Developer | Computer Vision | LLMs | Research Prototyping</p>
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<div class="tab-menu">
-  <button class="tab-btn active" onclick="showTab('skills')">Skills</button>
-  <button class="tab-btn" onclick="showTab('projects')">Projects</button>
-  <button class="tab-btn" onclick="showTab('education')">Education</button>
-  <button class="tab-btn" onclick="showTab('experience')">Experience</button>
-</div>
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skill-category"><h4>Programming Languages</h4><p><span>Python</span><span>Java</span><span>C++</span><span>R</span></p></div>
+  <div class="skill-category"><h4>Frameworks & Tools</h4><p><span>OpenCV</span><span>Pillow</span><span>scikit-image</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Git</span><span>Docker</span></p></div>
+  <div class="skill-category"><h4>Technologies</h4><p><span>LLMs</span><span>OpenAI</span><span>RAG</span><span>Computer Vision</span><span>Deep Learning</span></p></div>
+  <div class="skill-category"><h4>Platforms</h4><p><span>VS Code</span><span>Jupyter</span><span>Eclipse</span><span>PyCharm</span><span>GitHub</span></p></div>
+</section>
 
-<div id="skills" class="tab-content active">
-  <div class="section">
-    <h2>Skills</h2>
-    <h4>Languages</h4>
-    <div class="tech-list">
-      <span>Python</span><span>R</span><span>C++</span><span>Java</span>
-    </div>
-    <h4>Frameworks</h4>
-    <div class="tech-list">
-      <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span>
-    </div>
-    <h4>Computer Vision</h4>
-    <div class="tech-list">
-      <span>OpenCV</span><span>Pillow</span><span>scikit-image</span>
-    </div>
-    <h4>Generative AI</h4>
-    <div class="tech-list">
-      <span>LLMs</span><span>OpenAI GPT</span><span>RAG</span>
-    </div>
-    <h4>Tools</h4>
-    <div class="tech-list">
-      <span>Git</span><span>GitHub</span><span>Docker</span>
+<section id="experience">
+  <h2>Professional Experience</h2>
+  <div class="job">
+    <h3>Institute for Factory Automation and Production (FAPS)</h3>
+    <p><em>AI Software Developer</em> (Sep 2024 – Mar 2025)</p>
+    <ul>
+      <li>Developed pose estimation algorithm using 3D calibration objects.</li>
+      <li>Improved accuracy by 25% using Pyvista.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <h3>Technical University of Munich</h3>
+    <p><em>Software Developer</em> (Mar 2023 – Aug 2024)</p>
+    <ul>
+      <li>Built an R Shiny app for forest growth prediction.</li>
+      <li>Improved processing efficiency by 40%.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects & Research</h2>
+  <div class="project-card">
+    <h3>Watermark Typology Matching in WZIS</h3>
+    <p>Matched watermark patterns using image processing and pattern recognition.</p>
+  </div>
+  <div class="project-card">
+    <h3>Smart Mirror for Depression Detection</h3>
+    <p>AI-based smart mirror using facial analysis and sentiment detection.</p>
+  </div>
+  <div class="project-card">
+    <h3>Notes Recognition in Asian Sitar</h3>
+    <p>ML algorithms for detecting and labeling musical notes in sitar audio.</p>
+  </div>
+  <div class="project-card">
+    <h3>Android Restaurant App</h3>
+    <p>Table booking and notification app with user management.</p>
+  </div>
+  <div class="project-card">
+    <h3>Data Retrieval using RAG and LLMs</h3>
+    <p>Built a Retrieval-Augmented Generation pipeline using OpenAI.</p>
+  </div>
+</section>
+
+<section id="hobbies">
+  <h2>Hobbies & Interests</h2>
+  <div class="hobby-card">
+    <h3>Writing & Research</h3>
+    <p>Technical blogging and academic exploration in AI.</p>
+    <button>View Publications</button>
+  </div>
+  <div class="hobby-card">
+    <h3>Creative Arts</h3>
+    <p>Enjoy digital painting and UI mockup design.</p>
+    <button>Art Portfolio</button>
+  </div>
+  <div class="hobby-card">
+    <h3>Outdoor Activities</h3>
+    <p>Hiking, cycling, and mindfulness in nature.</p>
+    <div class="tags">
+      <span>🌲 Hiking</span>
+      <span>🧘 Yoga</span>
+      <span>🚴 Cycling</span>
     </div>
   </div>
-</div>
+</section>
 
-<div id="projects" class="tab-content">
-  <div class="section">
-    <h2>Projects</h2>
-    <div class="card">
-      <h4>Notes Recognition in Asian Sitar</h4>
-      <p><a href="https://github.com/MahaSaad12/-Notes_Recognition_in_Asian_sitar" target="_blank">GitHub</a></p>
-    </div>
-    <div class="card">
-      <h4>AI Chatbot</h4>
-      <p><a href="https://github.com/MahaSaad12/AI_boot" target="_blank">GitHub</a></p>
-    </div>
-    <div class="card">
-      <h4>AI Robotics</h4>
-      <p><a href="https://github.com/MahaSaad12/AI_Robotics" target="_blank">GitHub</a></p>
-    </div>
-    <div class="card">
-      <h4>Smart Mirror (Depression Detection)</h4>
-      <p><a href="https://github.com/MahaSaad12/Dep_Mirror_Smart_Mirror" target="_blank">GitHub</a></p>
-    </div>
-    <div class="card">
-      <h4>Forest TUM App</h4>
-      <p><a href="https://github.com/MahaSaad12/Forest_TUM_app" target="_blank">GitHub</a></p>
-    </div>
-    <div class="card">
-      <h4>RAG Workflow</h4>
-      <p><a href="https://github.com/MahaSaad12/RAG_Workflow" target="_blank">GitHub</a></p>
-    </div>
-  </div>
-</div>
-
-<div id="education" class="tab-content">
-  <div class="section">
-    <h2>Education</h2>
-    <div class="card">
-      <h4>Master in Artificial Intelligence</h4>
-      <p>Friedrich-Alexander-Universität Erlangen-Nürnberg, 2023 – Present</p>
-    </div>
-    <div class="card">
-      <h4>Bachelor of Computer Science</h4>
-      <p>University of Peshawar, 2010 – 2014</p>
-    </div>
-  </div>
-</div>
-
-<div id="experience" class="tab-content">
-  <div class="section">
-    <h2>Experience</h2>
-    <div class="card">
-      <h4>AI Software Developer</h4>
-      <p>FAPS, Erlangen (09/2024 – 03/2025)</p>
-    </div>
-    <div class="card">
-      <h4>Software Developer</h4>
-      <p>Technical University of Munich (03/2023 – 08/2024)</p>
-    </div>
-    <div class="card">
-      <h4>Lecturer & Lab Assistant</h4>
-      <p>City University Peshawar (11/2021 – 05/2023)</p>
-    </div>
-    <div class="card">
-      <h4>Lecturer</h4>
-      <p>The Brains Institute (12/2020 – 10/2021)</p>
-    </div>
-  </div>
-</div>
-
-<script>
-  function showTab(tabId) {
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-    document.getElementById(tabId).classList.add('active');
-    event.target.classList.add('active');
-  }
-</script>
+<section id="contact" class="contact-section">
+  <h2>Get In Touch</h2>
+  <p>I'm always interested in new opportunities or collaborations.</p>
+  <button onclick="window.location='mailto:mahamaqboolsethi@gmail.com'">📧 Email Me</button>
+  <button onclick="window.location='tel:+4917697727247'">📞 Call Me</button>
+  <p>
+    GitHub: <a href="https://github.com/MahaSaad12" style="color:white;">MahaSaad12</a> |
+    LinkedIn: <a href="https://linkedin.com/in/mahasaad91" style="color:white;">mahasaad91</a>
+  </p>
+</section>
 
 </body>
 </html>
