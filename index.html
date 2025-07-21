@@ -9,13 +9,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
+      background-color: #ffffff;
+      color: #333;
       padding: 40px;
     }
     header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     header img {
       width: 150px;
@@ -30,69 +30,79 @@
       margin-bottom: 10px;
     }
     .tagline {
-      color: #aaa;
+      color: #555;
       font-size: 18px;
     }
     .summary {
       text-align: center;
       max-width: 800px;
-      margin: 0 auto 30px;
+      margin: 0 auto 20px;
       font-size: 16px;
-      color: #ccc;
+      color: #666;
     }
     .contact {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     .contact a {
-      color: #00bcd4;
+      color: #0078d4;
       margin: 0 10px;
       text-decoration: none;
     }
-    .tabs {
+    .highlights {
       display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      margin: 20px auto;
+      max-width: 600px;
     }
-    .tab {
-      padding: 10px 20px;
-      margin: 5px;
-      background-color: #1e1e1e;
-      border-radius: 5px;
-      cursor: pointer;
+    .highlight-card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      color: #333;
+      padding: 12px 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      font-size: 15px;
+      font-weight: 500;
     }
-    .tab.active {
-      background-color: #00bcd4;
-      color: #000;
-    }
-    .tab-content {
-      display: none;
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 5px;
-    }
-    .tab-content.active {
-      display: block;
-    }
-    .card {
-      background-color: #2a2a2a;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-    }
-    .card h4 {
+    .highlight-card i {
       color: #00bcd4;
-      margin-bottom: 5px;
+      font-size: 18px;
     }
-    .card p {
-      color: #ccc;
-      font-size: 14px;
-      margin: 5px 0;
+    .skills-section {
+      background: #f9f9f9;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .skills-section h3 {
+      margin-bottom: 15px;
+      color: #0078d4;
+    }
+    .skill-category {
+      margin-bottom: 20px;
+    }
+    .skill-category h4 {
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+    .skill-badge {
+      display: inline-block;
+      background-color: #e0f3ff;
+      color: #0078d4;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 13px;
     }
     .footer {
       text-align: center;
-      color: #666;
+      color: #888;
       margin-top: 40px;
       font-size: 14px;
     }
@@ -117,91 +127,67 @@
     <a href="https://mahasaad12.github.io/My_portfolio_234" target="_blank">Portfolio</a>
   </div>
 
-  <div class="tabs">
-    <div class="tab active" onclick="showTab('experience')">Experience</div>
-    <div class="tab" onclick="showTab('education')">Education</div>
-    <div class="tab" onclick="showTab('projects')">Projects</div>
-    <div class="tab" onclick="showTab('skills')">Skills</div>
-    <div class="tab" onclick="showTab('publications')">Publications</div>
-  </div>
-
-  <div id="experience" class="tab-content active">
-    <div class="card">
-      <h4>Software Developer – TUM, Germany</h4>
-      <p>Mar 2023 – Aug 2024</p>
-      <p>Built an R Shiny app for forest growth prediction. Improved efficiency by 40% using real-time ML integration.</p>
+  <div class="highlights">
+    <div class="highlight-card">
+      <i class="fas fa-stethoscope"></i>
+      <span>Currently working in <strong>AI for healthcare</strong> with hands-on MLOps</span>
     </div>
-    <div class="card">
-      <h4>AI Developer Intern – FAPS, Erlangen</h4>
-      <p>Sep 2024 – Mar 2025</p>
-      <p>Designed pose estimation algorithms using Pyvista and 3D calibration.</p>
+    <div class="highlight-card">
+      <i class="fas fa-dumbbell"></i>
+      <span>Handled challenging tasks in building <strong>DL models for audio</strong></span>
     </div>
-    <div class="card">
-      <h4>Lecturer – City University, Peshawar</h4>
-      <p>Nov 2021 – May 2023</p>
-      <p>Taught Software Engineering and SRS/Design to undergraduates.</p>
+    <div class="highlight-card">
+      <i class="fas fa-trophy"></i>
+      <span><strong>Student Cluster Competition</strong> Winner at SC22</span>
+    </div>
+    <div class="highlight-card">
+      <i class="fas fa-book"></i>
+      <span><strong>Published Researcher</strong> in Audio Processing</span>
+    </div>
+    <div class="highlight-card">
+      <i class="fas fa-smile-beam"></i>
+      <span>At the end of the day <strong>make the data shine!</strong></span>
     </div>
   </div>
 
-  <div id="education" class="tab-content">
-    <div class="card">
-      <h4>Master of Artificial Intelligence</h4>
-      <p>Friedrich-Alexander-Universität, Germany (2023 – Present)</p>
+  <div class="skills-section">
+    <h3>Technical Skills</h3>
+    <div class="skill-category">
+      <h4>Programming Languages</h4>
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">R</span>
+      <span class="skill-badge">Java</span>
+      <span class="skill-badge">C++</span>
     </div>
-    <div class="card">
-      <h4>Master of Software Engineering</h4>
-      <p>CECOS University, Pakistan (2017 – 2021)</p>
+    <div class="skill-category">
+      <h4>Frameworks & Tools</h4>
+      <span class="skill-badge">TensorFlow</span>
+      <span class="skill-badge">PyTorch</span>
+      <span class="skill-badge">Keras</span>
+      <span class="skill-badge">scikit-learn</span>
+      <span class="skill-badge">Docker</span>
+      <span class="skill-badge">Git</span>
     </div>
-    <div class="card">
-      <h4>Bachelor of Computer Science</h4>
-      <p>University of Peshawar, Pakistan (2010 – 2014)</p>
+    <div class="skill-category">
+      <h4>Computer Vision</h4>
+      <span class="skill-badge">OpenCV</span>
+      <span class="skill-badge">scikit-image</span>
+      <span class="skill-badge">Pillow</span>
     </div>
-  </div>
-
-  <div id="projects" class="tab-content">
-    <div class="card">
-      <h4>RAG-based Data Retrieval</h4>
-      <p><a href="https://github.com/MahaSaad12/RAG_Workflow" target="_blank">GitHub</a></p>
+    <div class="skill-category">
+      <h4>Generative AI & LLMs</h4>
+      <span class="skill-badge">OpenAI GPT</span>
+      <span class="skill-badge">LangChain</span>
+      <span class="skill-badge">RAG</span>
     </div>
-    <div class="card">
-      <h4>Notes Recognition in Asian Sitar</h4>
-      <p><a href="https://github.com/MahaSaad12/-Notes_Recognition_in_Asian_sitar" target="_blank">GitHub</a></p>
-    </div>
-    <div class="card">
-      <h4>Depression Detection Smart Mirror</h4>
-      <p><a href="https://github.com/MahaSaad12/Dep_Mirror_Smart_Mirror" target="_blank">GitHub</a></p>
-    </div>
-  </div>
-
-  <div id="skills" class="tab-content">
-    <div class="card">
-      <p><strong>Languages:</strong> Python, R, Java, C++</p>
-      <p><strong>Frameworks:</strong> TensorFlow, PyTorch, Keras, scikit-learn</p>
-      <p><strong>Computer Vision:</strong> OpenCV, scikit-image, Pillow</p>
-      <p><strong>Generative AI:</strong> OpenAI GPT, LangChain, RAG</p>
-      <p><strong>Tools:</strong> Git, Docker, PyCharm, Jupyter, Eclipse</p>
-    </div>
-  </div>
-
-  <div id="publications" class="tab-content">
-    <div class="card">
-      <p><strong>ResolDep Mirror:</strong> Journal of Medical and Clinical Machines, 2022</p>
-      <p><strong>View Planning:</strong> Multi-camera calibration (In progress)</p>
-      <p><strong>Commercial Smart Mirrors:</strong> Systematic Review (In progress)</p>
+    <div class="skill-category">
+      <h4>Data Tools</h4>
+      <span class="skill-badge">Pandas</span>
+      <span class="skill-badge">NumPy</span>
+      <span class="skill-badge">Matplotlib</span>
+      <span class="skill-badge">Excel</span>
     </div>
   </div>
 
-  <div class="footer">
-    &copy; 2025 Maha Saad. All rights reserved.
-  </div>
-
-  <script>
-    function showTab(id) {
-      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      event.target.classList.add('active');
-    }
-  </script>
 </body>
 </html>
