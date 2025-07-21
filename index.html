@@ -5,188 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maha Saad | AI Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0f0f0f;
-      color: white;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 80px 20px;
-      text-align: center;
-      background: radial-gradient(circle at center, #1c1c1c, #0f0f0f);
-    }
-
-    header h1 {
-      font-size: 3em;
-      color: #ff6f61;
-    }
-
-    header h2 {
-      font-size: 2em;
-      margin-top: 10px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
       color: #fff;
     }
-
-    header p {
-      max-width: 700px;
+    header, section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 36px;
+    }
+    .tagline {
+      color: #aaa;
+      font-size: 18px;
+    }
+    .project-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
       margin: 20px auto;
-      font-size: 1.1em;
+      max-width: 700px;
+      text-align: left;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    .project-card h3 {
+      margin: 0 0 10px;
+      color: #00bcd4;
+    }
+    .project-card p {
+      margin: 5px 0;
       color: #ccc;
     }
-
-    .socials a {
-      margin: 0 10px;
-      color: white;
-      font-size: 1.5em;
+    .project-card a {
+      color: #00bcd4;
+      text-decoration: none;
     }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    h3.section-title {
-      font-size: 2em;
-      margin-bottom: 30px;
-      background: linear-gradient(to right, #ff6f61, #fcb045);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .skills-container, .projects-container, .experience-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .skill-badge {
-      background-color: #272727;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 25px;
-      font-size: 14px;
-    }
-
-    .timeline {
-      position: relative;
-      padding-left: 20px;
-      border-left: 2px solid #ff6f61;
-    }
-
-    .timeline-entry {
-      margin-bottom: 30px;
-    }
-
-    .timeline-entry h4 {
-      color: #fcb045;
-      margin-bottom: 5px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: none;
-      border-radius: 5px;
-    }
-
-    .contact-form button {
-      background-color: #ff6f61;
-      border: none;
-      padding: 10px 20px;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-      background-color: #111;
+    .project-card a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Maha Saad</h1>
-    <h2>AI & Data Science Developer</h2>
-    <p>Passionate about creating intelligent, data-driven systems using deep learning, computer vision, and generative AI tools.</p>
-    <div class="socials">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-    </div>
+    <p class="tagline">AI Developer</p>
   </header>
 
   <section>
-    <h3 class="section-title">Skills</h3>
-    <div class="skills-container">
-      <div class="skill-badge">Python</div>
-      <div class="skill-badge">R</div>
-      <div class="skill-badge">C++</div>
-      <div class="skill-badge">Java</div>
-      <div class="skill-badge">PyTorch</div>
-      <div class="skill-badge">TensorFlow</div>
-      <div class="skill-badge">Keras</div>
-      <div class="skill-badge">OpenCV</div>
-      <div class="skill-badge">Scikit-learn</div>
-      <div class="skill-badge">Docker</div>
-      <div class="skill-badge">LLMs</div>
-      <div class="skill-badge">RAG</div>
-      <div class="skill-badge">Git</div>
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Notes Recognition in Asian Sitar</h3>
+      <p>Used deep learning techniques for musical note detection in Sitar recordings.</p>
+      <p><a href="https://github.com/MahaSaad12/-Notes_Recognition_in_Asian_sitar" target="_blank">View Project</a></p>
     </div>
-  </section>
 
-  <section>
-    <h3 class="section-title">Experience</h3>
-    <div class="timeline">
-      <div class="timeline-entry">
-        <h4>AI Software Developer – FAPS</h4>
-        <p>Pose estimation using Euler angles, PyVista, data pipelines (Sept 2024 – Mar 2025)</p>
-      </div>
-      <div class="timeline-entry">
-        <h4>Software Developer – TUM</h4>
-        <p>Forest prediction app with R Shiny & ML (Mar 2023 – Aug 2024)</p>
-      </div>
+    <div class="project-card">
+      <h3>AI Chatbot (Transformer)</h3>
+      <p>Built a conversational AI using transformer architecture for interactive dialogs.</p>
+      <p><a href="https://github.com/MahaSaad12/AI_boot" target="_blank">View Project</a></p>
     </div>
-  </section>
 
-  <section>
-    <h3 class="section-title">Projects</h3>
-    <div class="projects-container">
-      <div class="skill-badge">Smart Mirror</div>
-      <div class="skill-badge">AI Chatbot</div>
-      <div class="skill-badge">Notes Recognition</div>
-      <div class="skill-badge">Forest TUM App</div>
+    <div class="project-card">
+      <h3>AI Robotics</h3>
+      <p>Controlled robotics tasks using Python-driven AI models.</p>
+      <p><a href="https://github.com/MahaSaad12/AI_Robotics" target="_blank">View Project</a></p>
     </div>
-  </section>
 
-  <section>
-    <h3 class="section-title">Contact</h3>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea rows="5" placeholder="Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <div class="project-card">
+      <h3>Smart Mirror</h3>
+      <p>Smart mirror with emotion detection for depression analysis via facial recognition.</p>
+      <p><a href="https://github.com/MahaSaad12/Dep_Mirror_Smart_Mirror" target="_blank">View Project</a></p>
+    </div>
 
-  <footer>
-    &copy; 2025 Maha Saad. All rights reserved.
-  </footer>
+    <div class="project-card">
+      <h3>Forest TUM App</h3>
+      <p>R Shiny tool that visualizes and predicts forest growth metrics from forestry data.</p>
+      <p><a href="https://github.com/MahaSaad12/Forest_TUM_app" target="_blank">View Project</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>RAG Workflow</h3>
+      <p>Implemented Retrieval-Augmented Generation pipeline using large language models.</p>
+      <p><a href="https://github.com/MahaSaad12/RAG_Workflow" target="_blank">View Project</a></p>
+    </div>
+
+  </section>
 </body>
 </html>
